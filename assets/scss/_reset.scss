@@ -7,3 +7,11 @@
 *::after {
   box-sizing: border-box;
 }
+
+body {
+  background-color: yellow;
+  max-width: 1430px;
+  min-width: 350px;
+  padding: 0 169px;
+  margin: 0 auto;
+}
