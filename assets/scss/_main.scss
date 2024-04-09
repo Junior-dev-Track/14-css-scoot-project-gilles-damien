@@ -1,0 +1,113 @@
+h1{
+    color: $color--darknavy;
+    font-family: 'Space Mono', monospace;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: -2.5px;
+}
+
+h2{
+    color: $color--darknavy;
+    font-family: 'Space Mono', monospace;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -2.14px;
+}
+
+h3{
+    color: $color--darknavy;
+    font-family: 'Space Mono', monospace;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 48px;
+    letter-spacing: -1.79px;
+}
+
+h4{
+    color: $color--darknavy;
+    font-family: 'Space Mono', monospace;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.07px;
+}
+
+p{
+    color: $color--dimgrey;
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+}
+.main_picto{
+    width: 56px;
+    height: 56px;
+    background-color: $color--yellow;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_div{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 48px 0;
+    & h4{
+        margin: 24px 0;
+    }
+}
+.main_round_pics {
+    position: relative; // Ajoutez cette ligne
+    margin: 56px 0;
+    width: 311px;
+    height: 311px;
+    & .main_pics {
+        border-radius: 50%;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+    }
+    & img[src*="arrow"] { // Sélectionne l'image de la flèche
+        position: absolute;
+        top: 80%; // Ajustez ces valeurs comme nécessaire
+        left: 55%;
+        transform: translate(-50%, -50%); // Centrer l'image
+    }
+}
+
+.main_txt{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 48px 0;
+    & p{
+        margin: 32px 0;
+    }
+    & button{
+        width: 180px;
+        height: 53px;
+        background-color: $color--yellow;
+        color: white;
+        font-family: 'Space Mono', monospace;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 25px;
+        border: none;
+        cursor: pointer;
+        &:hover{
+            background-color: white;
+            color: $color--yellow;
+            border: 1px solid $color--yellow;
+        }
+    }
+}

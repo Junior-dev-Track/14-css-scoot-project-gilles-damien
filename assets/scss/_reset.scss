@@ -5,13 +5,12 @@
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+
 }
 
 body {
-  background-color: yellow;
   max-width: 1430px;
-  min-width: 350px;
-  padding: 0 169px;
+  min-width: 311px;
+  padding: 0 8.5%;
   margin: 0 auto;
 }
