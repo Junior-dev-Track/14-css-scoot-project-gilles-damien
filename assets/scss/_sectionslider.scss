@@ -1,0 +1,44 @@
+.section {
+  &__slider {
+    background-image: url("../assets/img/Bitmap.png");
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 32px;
+    margin: 0px -8.5%; /* full width image - delete margin from the body*/
+  }
+  &__slider h1 {
+    font-family: Space Mono;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.7857142686843872px;
+    text-align: center;
+    color: white;
+    margin-top: 115px;
+    margin-bottom: 24px;
+  }
+  &__slider p {
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+    margin-bottom: 34px;
+  }
+  &__scootin .header__btn {
+    margin-bottom: 176px;
+  }
+}
+
+@media (min-width: 768px) {
+  .section {
+    &__slider {
+      padding: 0px 32px;
+    }
+  }
+}

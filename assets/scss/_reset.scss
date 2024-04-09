@@ -1,9 +1,9 @@
 * {
   margin: 0;
 }
-
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+body {
+  max-width: 1430px;
+  min-width: 350px;
+  padding: 0 8.5%;
+  margin: 0 auto;
 }
