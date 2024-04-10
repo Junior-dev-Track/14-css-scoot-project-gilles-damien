@@ -1,5 +1,6 @@
 .section {
   &__slider {
+    position: relative;
     background-image: url("../assets/img/Bitmap.png");
     background-size: cover;
     background-position: right;
@@ -8,7 +9,7 @@
     align-items: center;
     flex-direction: column;
     padding: 0px 32px;
-    margin: 0px -8.5%; /* full width image - delete margin from the body*/
+    margin: 0px -11%; /* full width image - delete margin from the body*/
   }
   &__slider h1 {
     font-family: Space Mono;
@@ -21,6 +22,7 @@
     margin-top: 115px;
     margin-bottom: 24px;
   }
+
   &__slider p {
     font-family: Lexend Deca;
     font-size: 15px;
@@ -30,15 +32,81 @@
     color: white;
     margin-bottom: 34px;
   }
+
   &__scootin .header__btn {
     margin-bottom: 176px;
   }
+  &__slider::after {
+    content: url("assets/img/section_fleche_mobile.svg");
+    position: absolute;
+    bottom: -50px;
+    left: 70px;
+    transform: translate(-50%, -50%);
+  }
 }
 
-@media (min-width: 768px) {
+/* Tablet */
+@media (min-width: 380px) and (max-width: 768px) {
+  .section {
+    &__slider::after {
+      content: url("assets/img/section_fleche_tablet.svg");
+      position: absolute;
+      bottom: -50px;
+      left: 130px;
+      transform: translate(-50%, -50%);
+    }
+    &__slider::before {
+      content: url("assets/img/section_round.svg");
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 10px;
+      right: -92px;
+    }
+    &__slider {
+      padding-left: 97px;
+      padding-right: 98px;
+    }
+  }
+}
+
+/* Screen */
+@media (min-width: 769px) {
   .section {
     &__slider {
-      padding: 0px 32px;
+      align-items: flex-start;
+      padding-left: 165px;
+    }
+    &__slider h1 {
+      width: 500px;
+      height: 112px;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 56px;
+      letter-spacing: -2.5px;
+      text-align: left;
+    }
+    &__slider p {
+      width: 405px;
+      height: 100px;
+      padding-left: 95px;
+      text-align: left;
+    }
+    &__scootin {
+      padding-left: 95px;
+    }
+    &__slider p::after {
+      content: url("assets/img/section_fleche1_desktop.svg");
+      position: absolute;
+      bottom: 100px;
+      left: 108px;
+      transform: translate(-50%, -50%);
+    }
+    &__slider p::before {
+      content: url("assets/img/section_fleche2_desktop.svg");
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 40px;
+      right: 32px;
     }
   }
 }

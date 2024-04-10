@@ -1,0 +1,116 @@
+.footer {
+  &__containerh {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: $color--darknavy;
+    margin: 0px -11%; /* full width image - delete margin from the body*/
+  }
+  &__containerh p {
+    padding: 88px 32px 40px 32px;
+    color: white;
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.4285714626312256px;
+    text-align: center;
+  }
+  &__links {
+    margin-bottom: 88px;
+  }
+  &__links img {
+    margin-right: 5px;
+  }
+  &__link:hover a {
+    color: #fcb72b;
+  }
+  &__containerh::after {
+    content: url("assets/img/Group 22.svg");
+    position: absolute;
+    bottom: -4px;
+    right: 0px;
+  }
+  &__containerb {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color--menumobile;
+    margin: 0px -11%;
+    height: 438px;
+  }
+
+  &__nav {
+    text-align: center;
+  }
+
+  &__menu {
+    list-style: none;
+  }
+  &__link {
+    padding-bottom: 16px;
+  }
+  &__nav ul {
+    padding-left: 0;
+  }
+  &__link a {
+    font-family: Space Mono;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 25px;
+    text-decoration: none;
+    color: $color--dimgrey;
+  }
+  &__social img:nth-of-type(2) {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+/* Tablet */
+@media (min-width: 380px) and (max-width: 768px) {
+  .footer {
+    &__containerh {
+      padding-right: 156px;
+      padding-left: 155px;
+    }
+    &__containerh p {
+      font-size: 48px;
+      line-height: 48px;
+      letter-spacing: -2.142857074737549px;
+      text-align: center;
+    }
+    &__links {
+      margin-bottom: 62px;
+    }
+    &__containerb {
+      flex-direction: row;
+      justify-content: flex-start;
+      height: 96px;
+    }
+    &__logo {
+      padding-left: 40px;
+      padding-right: 32px;
+    }
+    &__nav {
+      width: 100%;
+    }
+
+    &__menu {
+      display: flex;
+      flex-wrap: wrap;
+      align-self: center;
+    }
+    &__link {
+      margin-right: 32px;
+      padding-bottom: 0px;
+    }
+    &__social {
+      display: flex;
+      padding-right: 36px;
+    }
+  }
+}
