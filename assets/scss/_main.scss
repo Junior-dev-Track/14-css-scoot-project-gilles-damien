@@ -41,6 +41,10 @@ p{
     font-weight: 400;
     line-height: 25px;
 }
+
+.path{
+    display: none;
+}
 .main_picto{
     width: 56px;
     height: 56px;
@@ -61,9 +65,12 @@ p{
     & h4{
         margin: 24px 0;
     }
+
 }
+
 .main_round_pics {
-    position: relative; // Ajoutez cette ligne
+    //overflow: hidden;
+    position: relative;
     margin: 56px 0;
     width: 311px;
     height: 311px;
@@ -74,12 +81,29 @@ p{
         object-fit: cover;
         object-position: center;
     }
-    & img[src*="arrow"] { // Sélectionne l'image de la flèche
+    & img:last-child {
+        display: none;
+    }
+    & #svg_phone {
         position: absolute;
         top: 80%; // Ajustez ces valeurs comme nécessaire
         left: 55%;
         transform: translate(-50%, -50%); // Centrer l'image
     }
+    & #svg_wallet {
+        position: absolute;
+        top: 30%; // Ajustez ces valeurs comme nécessaire
+        left: 55%;
+        transform: translate(-50%, -50%); // Centrer l'image
+    }
+    & #svg_city{
+        position: absolute;
+        top: 0; // Ajustez ces valeurs comme nécessaire
+        left: -35%;
+        transform: scaleX(-1); // Centrer l'image
+
+    }
+
 }
 
 .main_txt{
@@ -108,6 +132,71 @@ p{
             background-color: white;
             color: $color--yellow;
             border: 1px solid $color--yellow;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+
+    .main_container{
+        position: relative;
+    }
+    .path{
+        display: flex;
+        position: absolute;
+        top: -10%;
+        left: 11%;
+        z-index: -1;
+    }
+    .main_div{
+        flex-direction: row;
+        justify-content: space-around;
+        & .main_picto{
+            width: 96px;
+            height: 96px;
+            & img{
+                width: 38px;
+                height: 47px;
+            }
+        }
+
+        & div{
+            text-align: left;
+            width: 65%;
+        }
+    }
+.tst{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+    .main_round_pics{
+        position: relative;
+        margin: 56px 0;
+        width: 445px;
+        height: 445px;
+        & svg{
+            display: none;
+        }
+        & #svg_phone_circle{
+            display: block;
+            position: absolute;
+            right: -165px;
+            top:40px;
+        }
+
+        & #svg_city_circle{
+            display: block;
+            position: absolute;
+            left: -165px;
+            top:0;
+        }
+
+        & #svg_wallet_circle{
+            display: block;
+            position: absolute;
+            right: -165px;
+            top: 0;
         }
     }
 }
