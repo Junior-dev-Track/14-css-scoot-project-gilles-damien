@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Scoot</title>
+    <link rel="stylesheet" type="text/css" href="style.scss" />
+    <script defer src="assets/js/burgermenu.js"></script>
+    <title>Scoot</title>
+</head>
+<body>
+<div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
+<header>
+    <div class="header__container">
+        <nav class="header__nav">
+            <div class="header__nav__close" onclick="closeMenuMobile()">
+                <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="w-6 h-6"
+                >
+                    <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M6 18 18 6M6 6l12 12"
+                    />
+                </svg>
+            </div>
+
+            <ul class="header__menu">
+                <li class="header__link"><a href="about.html">About</a></li>
+                <li class="header__link">
+                    <a href="html/location.html">Location</a>
+                </li>
+                <li class="header__link">
+                    <a href="html/careers.html">Careers</a>
+                </li>
+            </ul>
+            <div class="header__scootin">
+                <button class="header__btn">get scootin</button>
+            </div>
+        </nav>
+        <div class="header__burger" onclick="openMenuMobile()">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="w-6 h-6"
+            >
+                <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+            </svg>
+        </div>
+        <div class="header__logo">
+            <img src="assets/img/scoot.svg" alt="logo" />
+        </div>
+    </div>
+</header>
+<section>
+    <div class="about__container">
+        <div class="about__content">
+            <h1 class="about__title">
+                About
+            </h1>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
