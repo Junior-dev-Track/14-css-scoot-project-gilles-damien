@@ -1,0 +1,173 @@
+.section {
+  &__sliderloc {
+    position: relative;
+    height: 160px;
+    background-image: url("../assets/img/locations.svg");
+    background-size: 500px 160px;
+    opacity: 0.6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0px 32px;
+    margin: 0px -11%; /* full width image - delete margin from the body*/
+  }
+  &__sliderloc h1 {
+    font-family: Space Mono;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: -1.7857142686843872px;
+    text-align: center;
+    color: white;
+    text-transform: capitalize;
+  }
+  &__loccontainer {
+    position: relative;
+  }
+  &__loccontainer img {
+    max-width: 100%;
+    padding-top: 72px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  &__pointus,
+  &__pointeur,
+  &__pointrus,
+  &__pointjap {
+    width: 16px;
+    height: 16px;
+    background-color: #fcb72b;
+    border-radius: 25px;
+    position: absolute;
+  }
+  &__pointus img,
+  &__pointeur img,
+  &__pointrus img,
+  &__pointjap img {
+    display: none;
+  }
+  &__pointus {
+    top: 10%;
+    left: 24%;
+  }
+  &__pointeur {
+    top: 9%;
+    left: 42%;
+  }
+  &__pointrus {
+    top: 10%;
+    left: 82%;
+  }
+  &__pointjap {
+    top: 15%;
+    left: 76%;
+  }
+  &__locville {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Space Mono;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: -1.0714285373687744px;
+    text-align: center;
+    text-transform: capitalize;
+    color: $color--darknavy;
+    width: 100%;
+    background-color: rgba(252, 183, 43, 0.15);
+    margin: 16px 0px;
+    height: 72px;
+  }
+
+  &__locinfos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 72px;
+  }
+  &__locinfos h1 {
+    padding-top: 72px;
+    font-family: Space Mono;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -1.4285714626312256px;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+  &__locinfos p {
+    font-family: Lexend Deca;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 25px;
+    text-align: center;
+    padding-bottom: 32px;
+  }
+}
+
+@media (min-width: 380px) and (max-width: 768px) {
+  .section {
+    &__sliderloc::after {
+      content: url("assets/img/section_round.svg");
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 13%;
+      right: -19%;
+    }
+    &__sliderloc {
+      height: 200px;
+      justify-content: center;
+      align-items: flex-start;
+      background-size: cover;
+      background-position: left;
+    }
+    &__pointus,
+    &__pointeur,
+    &__pointrus,
+    &__pointjap {
+      display: none;
+    }
+
+    &__pointus::before {
+      position: absolute;
+      transform: translate(-50%, -50%);
+      background-image: url("../assets/img/ny.svg");
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    &__pointeur::after {
+      position: absolute;
+      display: block;
+    }
+    &__pointrus::after {
+      position: absolute;
+    }
+    &__pointjap::after {
+      position: absolute;
+      display: inline;
+    }
+    &__locville {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: 769px) {
+  .section {
+    &__sliderloc::after {
+      content: url("assets/img/section_round.svg");
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 40px;
+      right: -86px;
+    }
+    &__sliderloc {
+      height: 200px;
+      justify-content: flex-start;
+    }
+  }
+}
