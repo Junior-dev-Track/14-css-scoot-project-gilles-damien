@@ -1,0 +1,111 @@
+.about_section{
+   display: flex;
+   position: relative;
+   height: 160px;
+   width: 375px;
+   background-image: url("../assets/img/crossSection.png");
+   background-position: center;
+   background-size: cover;
+   background-repeat: no-repeat;
+   margin: 0 -10%;
+   &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background: rgba(47, 59, 89, 0.75);
+
+   }
+}
+.about{
+   &__title{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 1;
+      margin: auto;
+   }
+
+   &_text{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      & p{
+         margin-top: 27px;
+      }
+   }
+}
+
+#svg_girl {
+   position: absolute;
+   top: 65%;
+   left: 55%;
+   transform: translate(-50%, -50%);
+}
+
+#svg_tram {
+   position: absolute;
+   top: 22%;
+   left: 46%;
+   transform: translate(-50%, -50%);
+}
+
+.small_round_pics{
+   position: relative;
+   margin: 64px auto;
+   width: 240px;
+   height: 240px;
+   & .main_pics {
+      border-radius: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+   }
+
+   & .number_picto{
+      position: absolute;
+        top: 80%;
+        right: 30%;
+      width: 96px;
+      height: 96px;
+      background-color: $color--yellow;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+   }
+}
+
+.question{
+   display: flex;
+   padding: 32px;
+   align-items: center;
+   min-height: 112px;
+   background-color: $color--snow;
+   margin: 16px auto;
+   & .quest{
+      max-width: 90%;
+      text-align: center;
+      font-family: 'Space Mono', monospace;
+      font-size: 18px;
+      font-weight: 700;
+      color: $color--darknavy;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+
+      &::after {
+         content: url("../assets/img/dropDown.svg");
+         display: inline-block;
+         width: 16px;
+         height: 16px;
+         margin-left: 8px;
+         vertical-align: middle;
+      }
+   }
+}

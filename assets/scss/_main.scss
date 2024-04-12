@@ -91,9 +91,7 @@ p{
         object-fit: cover;
         object-position: center;
     }
-    & img:last-child {
-        display: none;
-    }
+
     & #svg_phone {
         position: absolute;
         top: 80%; // Ajustez ces valeurs comme nécessaire
