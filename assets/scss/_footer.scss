@@ -77,7 +77,7 @@
 @media (min-width: 380px) and (max-width: 768px) {
   .footer {
     &__containerh p {
-      width: 457px;
+      width: 80%;
       font-size: 48px;
       line-height: 48px;
       letter-spacing: -2.142857074737549px;
@@ -93,7 +93,7 @@
       height: 96px;
     }
     &__logo {
-      padding-left: calc(8.5%);
+      padding-left: calc(11%);
       padding-right: 32px;
     }
     &__nav {
@@ -112,6 +112,9 @@
     &__social {
       display: flex;
       padding-right: calc(8.5%);
+      width: 100%;
+      justify-content: space-between;
+      max-width: 120px;
     }
   }
 }
@@ -176,8 +179,10 @@
     }
     &__social {
       display: flex;
-      justify-content: flex-end;
       padding-right: calc(8.5%);
+      width: 100%;
+      justify-content: space-between;
+      max-width: 120px;
       flex: 1;
     }
   }
