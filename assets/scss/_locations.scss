@@ -4,14 +4,18 @@
     height: 160px;
     background-image: url("../assets/img/locations.svg");
     background-size: 500px 160px;
-    opacity: 0.6;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     padding: 0px 32px;
     margin: 0px -11%; /* full width image - delete margin from the body*/
+    z-index: 0;
+    &:after {
+      background: rgba(47, 59, 89, 0.75);
+    }
   }
+
   &__sliderloc h1 {
     font-family: Space Mono;
     font-size: 40px;
@@ -31,36 +35,31 @@
     padding-bottom: 40px;
     position: relative;
   }
-  &__pointus,
-  &__pointeur,
-  &__pointrus,
-  &__pointjap {
-    width: 16px;
-    height: 16px;
-    background-color: #fcb72b;
-    border-radius: 25px;
-    position: absolute;
-  }
-  &__pointus img,
-  &__pointeur img,
-  &__pointrus img,
-  &__pointjap img {
+  &__loccontainer img:last-of-type {
     display: none;
   }
-  &__pointus {
-    top: 10%;
+  &__pointus::after {
+    content: url("assets/img/Oval.svg");
+    position: absolute;
+    top: 9%;
     left: 24%;
   }
-  &__pointeur {
+  &__pointeur::after {
+    content: url("assets/img/Oval.svg");
+    position: absolute;
     top: 9%;
     left: 42%;
   }
-  &__pointrus {
+  &__pointrus::after {
+    content: url("assets/img/Oval.svg");
+    position: absolute;
     top: 10%;
     left: 82%;
   }
-  &__pointjap {
-    top: 15%;
+  &__pointjap::after {
+    content: url("assets/img/Oval.svg");
+    position: absolute;
+    top: 14%;
     left: 76%;
   }
   &__locville {
@@ -86,23 +85,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 72px;
     margin-bottom: 72px;
   }
-  &__locinfos h1 {
-    padding-top: 72px;
-    font-family: Space Mono;
-    font-size: 32px;
-    font-weight: 700;
-    line-height: 32px;
-    letter-spacing: -1.4285714626312256px;
+  &__locinfos h2 {
     text-align: center;
     padding-bottom: 32px;
   }
   &__locinfos p {
-    font-family: Lexend Deca;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 25px;
     text-align: center;
     padding-bottom: 32px;
   }
@@ -116,48 +106,56 @@
       transform: translate(-50%, -50%);
       bottom: 13%;
       right: -19%;
+      &:after {
+        background: rgba(47, 59, 89, 0.75);
+      }
+      z-index: 1;
     }
     &__sliderloc {
       height: 200px;
       justify-content: center;
       align-items: flex-start;
       background-size: cover;
-      background-position: left;
+      background-position: 38% center;
     }
-    &__pointus,
-    &__pointeur,
-    &__pointrus,
-    &__pointjap {
+
+    &__sliderloc h2 {
+      padding-left: calc(-8.5% + 18%);
+    }
+
+    &__locville {
+      display: none;
+    }
+    &__locinfos .header__btn {
+      padding: 0;
+      margin: 0;
+    }
+    &__loccontainer img:first-of-type {
       display: none;
     }
 
-    &__pointus::before {
-      position: absolute;
-      transform: translate(-50%, -50%);
-      background-image: url("../assets/img/ny.svg");
-      top: 0;
-      left: 0;
-      z-index: 1;
-    }
-    &__pointeur::after {
-      position: absolute;
-      display: block;
-    }
-    &__pointrus::after {
-      position: absolute;
-    }
+    &__pointus::after,
+    &__pointeur::after,
+    &__pointrus::after,
     &__pointjap::after {
-      position: absolute;
-      display: inline;
-    }
-    &__locville {
       display: none;
+    }
+
+    &__loccontainer img:last-of-type {
+      display: block;
     }
   }
 }
 
 @media (min-width: 769px) {
   .section {
+    &__sliderloc {
+      height: 200px;
+      justify-content: center;
+      align-items: flex-start;
+      background-size: cover;
+      padding-left: calc(11%);
+    }
     &__sliderloc::after {
       content: url("assets/img/section_round.svg");
       position: absolute;
@@ -165,9 +163,46 @@
       bottom: 40px;
       right: -86px;
     }
-    &__sliderloc {
-      height: 200px;
-      justify-content: flex-start;
+
+    &__locville {
+      display: none;
+    }
+    &__locinfos {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__locinfos h2 {
+      text-align: left;
+      flex: 1;
+      padding-bottom: 0px;
+    }
+    &__locinfos p {
+      width: auto;
+      text-align: left;
+      padding-bottom: 0px;
+      margin-left: 2%;
+      margin-right: 4%;
+      flex: 2;
+    }
+    &__locinfos .header__btn {
+      justify-content: center;
+      padding: 0;
+      margin: 0;
+    }
+    &__loccontainer img:first-of-type {
+      display: none;
+    }
+
+    &__pointus::after,
+    &__pointeur::after,
+    &__pointrus::after,
+    &__pointjap::after {
+      display: none;
+    }
+
+    &__loccontainer img:last-of-type {
+      display: block;
     }
   }
 }
