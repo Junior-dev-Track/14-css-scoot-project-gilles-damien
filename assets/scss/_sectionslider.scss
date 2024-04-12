@@ -94,19 +94,28 @@
     &__scootin {
       padding-left: 95px;
     }
-    &__slider p::after {
+    &__slider::after {
       content: url("assets/img/section_fleche1_desktop.svg");
       position: absolute;
-      bottom: 100px;
+      bottom: 290px;
       left: 108px;
       transform: translate(-50%, -50%);
     }
+
     &__slider p::before {
       content: url("assets/img/section_fleche2_desktop.svg");
       position: absolute;
       transform: translate(-50%, -50%);
-      bottom: 40px;
-      right: 32px;
+      bottom: 85px;
+      right: -90px;
+      width: 38%;
+    }
+    &__slider p::after {
+      content: url("assets/img/section_round.svg");
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 145px;
+      right: -92px;
     }
   }
 }

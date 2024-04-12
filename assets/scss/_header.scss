@@ -4,6 +4,7 @@
     justify-content: center;
     width: 100%;
   }
+
   &__container {
     height: 64px;
     display: flex;
@@ -25,8 +26,12 @@
     align-items: flex-start;
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 64px 0px 0px 0px;
   }
+  &__menu li {
+    margin-bottom: 24px;
+  }
+
   &__link a {
     color: $color--lightgrey;
     font-family: Space Mono;
@@ -38,6 +43,7 @@
   }
   &__link:hover a {
     color: #fcb72b;
+    cursor: pointer;
   }
   &__nav {
     position: fixed;
@@ -56,6 +62,7 @@
   }
   &__nav.open {
     display: flex;
+    z-index: 1;
     animation: transformMenu 300ms ease-in-out forwards;
   }
   @keyframes transformMenu {
@@ -73,7 +80,7 @@
     height: 30px;
     position: absolute;
     top: -50px;
-    left: 50px;
+    left: 20px;
   }
   &__btn {
     width: 192px;
@@ -86,6 +93,12 @@
     line-height: 25px;
     text-align: center;
     color: white;
+  }
+  &__btn:hover {
+    background-color: white;
+    color: #fcb72b;
+    border: 2px solid #fcb72b;
+    cursor: pointer;
   }
   &__scootin {
     display: flex;
@@ -109,6 +122,9 @@
   display: block;
 }
 
+.hide {
+  display: none;
+}
 @media (min-width: 768px) {
   .header {
     &__container {
@@ -140,6 +156,10 @@
       flex-wrap: nowrap;
       justify-content: flex-end;
       align-items: center;
+      margin: 0;
+    }
+    &__menu li {
+      margin: 0px;
     }
     &__link a {
       margin-right: 32px;
@@ -169,6 +189,9 @@
     }
     &__logo {
       width: 107px;
+    }
+    &__menu {
+      margin: 0;
     }
   }
 }

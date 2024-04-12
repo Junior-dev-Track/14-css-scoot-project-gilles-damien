@@ -9,7 +9,10 @@
     margin: 0px -11%; /* full width image - delete margin from the body*/
   }
   &__containerh p {
-    padding: 88px 32px 40px 32px;
+    padding-top: 88px;
+    padding-left: calc(8.5%);
+    padding-right: calc(8.5%);
+    padding-bottom: 40px;
     color: white;
     font-family: Space Mono;
     font-size: 32px;
@@ -73,16 +76,14 @@
 /* Tablet */
 @media (min-width: 380px) and (max-width: 768px) {
   .footer {
-    &__containerh {
-      padding-right: 156px;
-      padding-left: 155px;
-    }
     &__containerh p {
+      width: 457px;
       font-size: 48px;
       line-height: 48px;
       letter-spacing: -2.142857074737549px;
       text-align: center;
     }
+
     &__links {
       margin-bottom: 62px;
     }
@@ -92,7 +93,7 @@
       height: 96px;
     }
     &__logo {
-      padding-left: 40px;
+      padding-left: calc(8.5%);
       padding-right: 32px;
     }
     &__nav {
@@ -110,7 +111,74 @@
     }
     &__social {
       display: flex;
-      padding-right: 36px;
+      padding-right: calc(8.5%);
+    }
+  }
+}
+@media (min-width: 769px) {
+  .footer {
+    &__containerh {
+      height: 300px;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    &__containerh p {
+      margin: 0;
+      width: 415px;
+      font-size: 48px;
+      font-weight: 700;
+      line-height: 48px;
+      letter-spacing: -2.142857074737549px;
+      text-align: left;
+      flex: 1;
+    }
+    &__links {
+      padding-right: calc(8.5%);
+      margin: 0;
+      display: flex;
+      justify-content: flex-end;
+      flex: 1;
+    }
+    &__links img:first-child {
+      width: 159px;
+      height: 56px;
+    }
+    &__links img:last-child {
+      width: 182px;
+      height: 56px;
+    }
+    &__containerb {
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      height: 96px;
+    }
+
+    &__logo {
+      padding-left: calc(8.5%);
+      width: 107px;
+      padding-right: 58px;
+    }
+    &__nav {
+      flex: 2;
+    }
+
+    &__menu {
+      display: flex;
+      flex-wrap: wrap;
+      align-self: center;
+    }
+    &__link {
+      margin-right: 32px;
+      padding-bottom: 0px;
+    }
+    &__social {
+      display: flex;
+      justify-content: flex-end;
+      padding-right: calc(8.5%);
+      flex: 1;
     }
   }
 }

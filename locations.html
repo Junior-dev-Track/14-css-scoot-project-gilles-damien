@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="style.scss" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Scoot</title>
+    <link rel="stylesheet" type="text/css" href="style.scss" />
+    <script defer src="assets/js/burgermenu.js"></script>
+    <title>Vite App</title>
+  </head>
+  <body>
+    <header>
+      <div class="header__container">
+        <nav class="header__nav">
+          <div class="header__nav__close" onclick="closeMenuMobile()">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6 18 18 6M6 6l12 12"
+              />
+            </svg>
+          </div>
+
+          <ul class="header__menu">
+            <li class="header__link"><a href="about.html">About</a></li>
+            <li class="header__link">
+              <a href="locations.html">Location</a>
+            </li>
+            <li class="header__link">
+              <a href="careers.html">Careers</a>
+            </li>
+          </ul>
+          <div class="header__scootin">
+            <button class="header__btn">get scootin</button>
+          </div>
+        </nav>
+        <div class="header__burger" onclick="openMenuMobile()">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </div>
+        <div class="header__logo">
+          <a href="index.html"><img src="assets/img/scoot.svg" alt="logo" /></a>
+        </div>
+      </div>
+    </header>
+    <section>
+      <div class="section__sliderloc">
+        <h1>locations</h1>
+      </div>
+      <div class="section__loccontainer">
+        <img src="assets/img/worldmap.png" alt="worldmap" />
+        <div class="section__pointus"></div>
+        <div class="section__pointeur"></div>
+        <div class="section__pointrus"></div>
+        <div class="section__pointjap"></div>
+        <div class="section__locville">new york</div>
+        <div class="section__locville">london</div>
+        <div class="section__locville">jakarta</div>
+        <div class="section__locville">yokohama</div>
+        <div class="section__locinfos">
+          <h1>Your City Not Listed?</h1>
+          <p>
+            If you’d like to see Scoot in your hometown, be sure to let us know.
+            We track requests and plan launches based on demand. Feel free to
+            message us by clicking the link or messaging us on social.
+          </p>
+          <button class="section__locinfos header__btn">Mesage Us</button>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="footer__containerh">
+        <p>Sign up and Scoot of today</p>
+        <div class="footer__links">
+          <a href="#"
+            ><img src="assets/img/appstore.svg" alt="img_appstore"
+          /></a>
+          <a href="#"
+            ><img src="assets/img/googleplay.svg" alt="img_googleplay"
+          /></a>
+        </div>
+      </div>
+      <div class="footer__containerb">
+        <div class="footer__logo">
+          <img src="assets/img/scootfooter.svg" alt="footer_img" />
+        </div>
+        <nav class="footer__nav">
+          <ul class="footer__menu">
+            <li class="footer__link"><a href="html/about.html">About</a></li>
+            <li class="footer__link">
+              <a href="html/location.html">Location</a>
+            </li>
+            <li class="footer__link">
+              <a href="html/careers.html">Careers</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="footer__social">
+          <img src="assets/img/facebook.svg" alt="Facebook_img" />
+          <img src="assets/img/twitter.svg" alt="Twitter_img" />
+          <img src="assets/img/instagram.svg" alt="Instagram_img" />
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
