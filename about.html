@@ -16,7 +16,7 @@
 </head>
 <body>
 <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
-<header>
+<header id="header">
     <div class="header__container">
         <nav class="header__nav">
             <div class="header__nav__close" onclick="closeMenuMobile()">
@@ -66,16 +66,22 @@
             </svg>
         </div>
         <div class="header__logo">
-            <img src="assets/img/scoot.svg" alt="logo" />
+            <a href="index.html"><img src="assets/img/scoot.svg" alt="logo" /></a>
         </div>
     </div>
 </header>
 <section class="about_section">
     <div class="about__title">
-            <h1>
-                About
-            </h1>
+        <h1>
+            About
+        </h1>
+
     </div>
+    <svg class="svg_circle" width="203" height="63" viewBox="0 0 203 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="31" cy="31.5" r="29.5" stroke="white" stroke-width="3"/>
+        <circle cx="117" cy="31.5" r="29.5" stroke="white" stroke-width="3"/>
+        <circle cx="203" cy="31.5" r="31" fill="white"/>
+    </svg>
 </section>
 <main>
 
@@ -110,7 +116,7 @@
 
             </div>
             <div class="main_left">
-                <img src="assets/img/Group%2015.svg" alt="guy with a phone">
+                <img src="assets/img/tram.svg" alt="a tram">
             </div>
 
             <div class="main_txt">
@@ -125,48 +131,50 @@
         <h2>
             Our values
         </h2>
-        <div class="one_value">
-            <div class="small_round_pics">
-                <img class="main_pics" src="assets/img/phone.png" alt="a phone">
-                <div class="number_picto">
-                    <h4>01</h4>
+        <div class="about_values_all">
+            <div class="one_value">
+                <div class="small_round_pics">
+                    <img class="main_pics" src="assets/img/phone.png" alt="a phone">
+                    <div class="number_picto">
+                        <h4>01</h4>
+                    </div>
+                </div>
+                <div class="about_text">
+                    <h4>
+                        Our tech
+                    </h4>
+                    <p>We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
                 </div>
             </div>
-            <div class="about_text">
-                <h4>
-                    Our tech
-                </h4>
-                <p>We’re using cutting edge technology to drive accessible urban transportation forward. Our fully electric scooters are a joy to ride!</p>
-            </div>
-        </div>
 
-        <div class="one_value">
-            <div class="small_round_pics">
-                <img class="main_pics" src="assets/img/yellowScoot.png" alt="a yellow scoot">
-                <div class="number_picto">
-                    <h4>02</h4>
+            <div class="one_value">
+                <div class="small_round_pics">
+                    <img class="main_pics" src="assets/img/yellowScoot.png" alt="a yellow scoot">
+                    <div class="number_picto">
+                        <h4>02</h4>
+                    </div>
+                </div>
+                <div class="about_text">
+                    <h4>
+                        Our integrity
+                    </h4>
+                    <p>We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
                 </div>
             </div>
-            <div class="about_text">
-                <h4>
-                    Our integrity
-                </h4>
-                <p>We are fully committed to deliver a great yet safe, sustainable micro-mobility experience in every city we serve.</p>
-            </div>
-        </div>
 
-        <div class="one_value">
-            <div class="small_round_pics">
-                <img class="main_pics" src="assets/img/walkingPerson.png" alt="a bunch a people walking on a zebra crossing">
-                <div class="number_picto">
-                    <h4>03</h4>
+            <div class="one_value">
+                <div class="small_round_pics">
+                    <img class="main_pics" src="assets/img/walkingPerson.png" alt="a bunch a people walking on a zebra crossing">
+                    <div class="number_picto">
+                        <h4>03</h4>
+                    </div>
                 </div>
-            </div>
-            <div class="about_text">
-                <h4>
-                    Our community
-                </h4>
-                <p>We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+                <div class="about_text">
+                    <h4>
+                        Our community
+                    </h4>
+                    <p>We support every community we serve. All workers are paid a living wage based on their location and are Scoot employees.</p>
+                </div>
             </div>
         </div>
     </div>
@@ -174,24 +182,54 @@
         <h2>FAQs</h2>
 
         <div class="how">
-            <details class="question">
-                <summary class="quest">How do I download the app?</summary>
-                <p>To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
-            </details>
+            <h3>How it works?</h3>
+            <div class="how_all">
+                <details class="question">
+                    <summary class="quest">How do I download the app?</summary>
+                    <p>To download the Scoot app, you can search “Scoot” in both the App and Google Play stores. An even simpler way to do it would be to click the relevant link at the bottom of this page and you’ll be re-directed to the correct page.</p>
+                </details>
 
-            <details class="question">
-                <summary class="quest">Can I find a nearby Scoots?</summary>
-                <p>
-                    Yes, you can! The Scoot app will show you all the available scooters in your area. You can also use the app to reserve a scooter for up to 30 minutes before you pick it up.
-                </p>
-            </details>
+                <details class="question">
+                    <summary class="quest">Can I find a nearby Scoots?</summary>
+                    <p>
+                        Yes, you can! The Scoot app will show you all the available scooters in your area. You can also use the app to reserve a scooter for up to 30 minutes before you pick it up.
+                    </p>
+                </details>
 
-            <details class="question">
-               <summary class="quest">Do I need a license to ride?</summary>
-                <p>
-                    Yes, you do. You need a valid driver’s license to ride a Scoot. If you’re riding a scooter in a country where you’re required to wear a helmet, you’ll need to wear one while riding a Scoot.
-                </p>
-            </details>
+                <details class="question">
+                   <summary class="quest">Do I need a license to ride?</summary>
+                    <p>
+                        Yes, you do. You need a valid driver’s license to ride a Scoot. If you’re riding a scooter in a country where you’re required to wear a helmet, you’ll need to wear one while riding a Scoot.
+                    </p>
+                </details>
+            </div>
+    </div>
+    <div class="how">
+            <h3>Safe driving</h3>
+        <div class="how_all">
+            <div>
+                <details class="question">
+                    <summary class="quest">Should I wear a helmet?</summary>
+                    <p>
+                        Yes, please do! All cities have different laws. But we strongly strongly strongly recommend always wearing a helmet regardless of the local laws. We like you and we want you to be as safe as possible while Scooting.
+                    </p>
+                </details>
+
+                <details class="question">
+                    <summary class="quest">How about the rules & regulations?</summary>
+                    <p>
+                        We want you to be safe and legal. We expect all riders to follow local laws and rules of the road. This includes things like stopping at red lights and stop signs, yielding to pedestrians, and not riding on sidewalks.
+                    </p>
+                </details>
+
+                <details class="question">
+                    <summary class="quest">What if I damage my Scoot?</summary>
+                    <p>
+                        If you damage a Scoot, please contact our customer service team as soon as possible. You can reach them through the app or by emailing
+                    </p>
+                </details>
+            </div>
+        </div>
     </div>
 </div>
 
