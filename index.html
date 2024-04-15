@@ -5,10 +5,16 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="style.scss" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
     <title>Scoot</title>
     <link rel="stylesheet" type="text/css" href="style.scss" />
     <script defer src="assets/js/burgermenu.js"></script>
@@ -16,7 +22,7 @@
   </head>
   <body>
     <div class="overlay-menu-mobile" onclick="closeMenuMobile()"></div>
-    <header>
+    <header id="header">
       <div class="header__container">
         <nav class="header__nav">
           <div class="header__nav__close" onclick="closeMenuMobile()">
@@ -87,95 +93,191 @@
       <div class="main_container">
         <div class="main_div">
           <div class="main_picto">
-            <img src="assets/img/Combined%20Shape%20Phone.svg" alt="phone"/>
-
+            <img src="assets/img/Combined%20Shape%20Phone.svg" alt="phone" />
           </div>
           <div>
-              <h4>Locate with app</h4>
-              <p>Use the app to find the nearest scooter to you. We are continuously placing scooters in the areas with most demand, so one should never be too far away.</p>
+            <h4>Locate with app</h4>
+            <p>
+              Use the app to find the nearest scooter to you. We are
+              continuously placing scooters in the areas with most demand, so
+              one should never be too far away.
+            </p>
           </div>
-
-      </div>
-
-        <div class="main_div">
-          <div class="main_picto">
-            <img src="assets/img/001-scooter.svg" alt="scooter"/>
-          </div>
-            <div>
-                <h4>Pick your scooter</h4>
-                <p>We show the most important info for the scooters closest to you. So you know how much charge they have left and can see roughly how much it will cost.</p>
-            </div>
         </div>
 
         <div class="main_div">
           <div class="main_picto">
-            <img src="assets/img/Combined%20Shape%20Scoot.svg" alt="Scooter with pilote"/>
-            <svg class="path" width="15" height="1100" viewBox="0 0 15 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M7.5 1100.5V0.5" stroke="#E5ECF4" stroke-width="15"/>
+            <img src="assets/img/001-scooter.svg" alt="scooter" />
+          </div>
+          <div>
+            <h4>Pick your scooter</h4>
+            <p>
+              We show the most important info for the scooters closest to you.
+              So you know how much charge they have left and can see roughly how
+              much it will cost.
+            </p>
+          </div>
+        </div>
+
+        <div class="main_div">
+          <div class="main_picto">
+            <img
+              src="assets/img/Combined%20Shape%20Scoot.svg"
+              alt="Scooter with pilote"
+            />
+            <svg
+              class="path"
+              width="15"
+              height="1100"
+              viewBox="0 0 15 1100"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M7.5 1100.5V0.5" stroke="#E5ECF4" stroke-width="15" />
             </svg>
           </div>
           <div>
             <h4>Enjoy the ride</h4>
-            <p>Scan the QR code and the bike will unlock. Retract the cable lock, put on a helmet, and you’re off! Always lock bikes away from walkways and accessibility ramps.</p>
+            <p>
+              Scan the QR code and the bike will unlock. Retract the cable lock,
+              put on a helmet, and you’re off! Always lock bikes away from
+              walkways and accessibility ramps.
+            </p>
           </div>
         </div>
       </div>
       <div class="need_parent">
         <div class="tst">
           <div class="main_round_pics">
-            <img class="main_pics" src="assets/img/phoneGuy.png" alt="a guy with a phone">
-            <svg id="svg_phone" width="349" height="151" viewBox="0 0 349 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M740.969 8H182.854V107.369H6.59113" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
-              <path d="M44.6392 145.639L6.21289 107.213L44.6392 68.7869" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
+            <img
+              class="main_pics"
+              src="assets/img/phoneGuy.png"
+              alt="a guy with a phone"
+            />
+            <svg
+              id="svg_phone"
+              width="349"
+              height="151"
+              viewBox="0 0 349 151"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M740.969 8H182.854V107.369H6.59113"
+                stroke="#FCB72B"
+                stroke-width="15"
+                stroke-linejoin="bevel"
+              />
+              <path
+                d="M44.6392 145.639L6.21289 107.213L44.6392 68.7869"
+                stroke="#FCB72B"
+                stroke-width="15"
+                stroke-linejoin="bevel"
+              />
             </svg>
-
           </div>
           <div class="main_right">
-            <img src="assets/img/Group%2015.svg" alt="guy with a phone">
+            <img src="assets/img/Group%2015.svg" alt="guy with a phone" />
           </div>
-
 
           <div class="main_txt">
             <h2>Easy to use riding telemetry</h2>
-            <p>The Scoot app is available with riding telemetry. This means it can show you your average speed, how long you've been using the scooter, your traveling distance, and many more things all in an easy to use app.</p>
+            <p>
+              The Scoot app is available with riding telemetry. This means it
+              can show you your average speed, how long you've been using the
+              scooter, your traveling distance, and many more things all in an
+              easy to use app.
+            </p>
             <button>Learn More</button>
           </div>
         </div>
 
         <div class="tst">
           <div class="main_round_pics">
-            <img class="main_pics" src="assets/img/052282c43801ffcc9ad425c08b740148.png" alt="a city">
-              <svg id="svg_city" width="349" height="151" viewBox="0 0 349 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M740.969 8H182.854V107.369H6.59113" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
-                <path d="M44.6392 145.639L6.21289 107.213L44.6392 68.7869" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
-              </svg>
+            <img
+              class="main_pics"
+              src="assets/img/052282c43801ffcc9ad425c08b740148.png"
+              alt="a city"
+            />
+            <svg
+              id="svg_city"
+              width="349"
+              height="151"
+              viewBox="0 0 349 151"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M740.969 8H182.854V107.369H6.59113"
+                stroke="#FCB72B"
+                stroke-width="15"
+                stroke-linejoin="bevel"
+              />
+              <path
+                d="M44.6392 145.639L6.21289 107.213L44.6392 68.7869"
+                stroke="#FCB72B"
+                stroke-width="15"
+                stroke-linejoin="bevel"
+              />
+            </svg>
           </div>
           <div class="main_left">
-            <img src="assets/img/Group%2014.svg" alt="guy with a phone">
+            <img src="assets/img/Group%2014.svg" alt="guy with a phone" />
           </div>
 
           <div class="main_txt">
             <h2>Coming to a city near you</h2>
-            <p>Scoot is available in 4 major cities so far. We’re expanding rapidly, so be sure to let us know if you want to see us in your hometown. We’re aiming to let our scooters loose on 23 cities over the coming year.</p>
+            <p>
+              Scoot is available in 4 major cities so far. We’re expanding
+              rapidly, so be sure to let us know if you want to see us in your
+              hometown. We’re aiming to let our scooters loose on 23 cities over
+              the coming year.
+            </p>
             <button>Learn More</button>
           </div>
         </div>
 
         <div class="tst">
           <div class="main_round_pics">
-            <img class="main_pics" src="assets/img/75aa7e504d6554c904ee76dd3b26f696.png" alt="a guy with a wallet">
-              <svg id="svg_wallet" width="349" height="151" viewBox="0 0 100 151" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M240.969 8H182.854V107.369H6.59113" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
-                <path d="M44.6392 145.639L6.21289 107.213L44.6392 68.7869" stroke="#FCB72B" stroke-width="15" stroke-linejoin="bevel"/>
-              </svg>
+            <img
+              class="main_pics"
+              src="assets/img/75aa7e504d6554c904ee76dd3b26f696.png"
+              alt="a guy with a wallet"
+            />
+            <svg
+              id="svg_wallet"
+              width="349"
+              height="151"
+              viewBox="0 0 100 151"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M240.969 8H182.854V107.369H6.59113"
+                stroke="#FCB72B"
+                stroke-width="15"
+                stroke-linejoin="bevel"
+              />
+              <path
+                d="M44.6392 145.639L6.21289 107.213L44.6392 68.7869"
+                stroke="#FCB72B"
+                stroke-width="15"
+                stroke-linejoin="bevel"
+              />
+            </svg>
           </div>
           <div class="main_right">
-            <img src="assets/img/Group%2018.svg" alt="guy with a phone">
+            <img src="assets/img/Group%2018.svg" alt="guy with a phone" />
           </div>
 
           <div class="main_txt">
             <h2>Zero hassle payments</h2>
-            <p>Our payment is as easy as one two three. We accept most credit cards and debit cards. You can also link your PayPal account inside the app. Need to pay later? No worries! You can defer payment for up to a month.</p>
+            <p>
+              Our payment is as easy as one two three. We accept most credit
+              cards and debit cards. You can also link your PayPal account
+              inside the app. Need to pay later? No worries! You can defer
+              payment for up to a month.
+            </p>
             <button>Learn More</button>
           </div>
         </div>

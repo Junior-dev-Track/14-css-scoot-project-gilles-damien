@@ -3,7 +3,7 @@
     position: relative;
     height: 160px;
     background-image: url("../assets/img/locations.svg");
-    background-size: 500px 160px;
+    background-size: 500px 180px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,9 +11,15 @@
     padding: 0px 32px;
     margin: 0px -11%; /* full width image - delete margin from the body*/
     z-index: 0;
-    &:after {
-      background: rgba(47, 59, 89, 0.75);
-    }
+  }
+  &__sliderloc::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(47, 59, 89, 0.75);
   }
 
   &__sliderloc h1 {
@@ -25,6 +31,7 @@
     text-align: center;
     color: white;
     text-transform: capitalize;
+    z-index: 1;
   }
   &__loccontainer {
     position: relative;
@@ -105,10 +112,7 @@
       position: absolute;
       transform: translate(-50%, -50%);
       bottom: 13%;
-      right: -19%;
-      &:after {
-        background: rgba(47, 59, 89, 0.75);
-      }
+      right: -100px;
       z-index: 1;
     }
     &__sliderloc {
@@ -161,7 +165,7 @@
       position: absolute;
       transform: translate(-50%, -50%);
       bottom: 40px;
-      right: -86px;
+      right: -100px;
     }
 
     &__locville {

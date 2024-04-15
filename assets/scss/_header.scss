@@ -2,7 +2,7 @@
   &__logo {
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 70%;
   }
 
   &__container {
@@ -13,6 +13,7 @@
   }
   &__burger {
     align-items: center;
+    padding-left: 32px;
   }
   &__burger svg {
     stroke: #fcb72b;
@@ -62,7 +63,7 @@
   }
   &__nav.open {
     display: flex;
-    z-index: 1;
+    z-index: 2;
     animation: transformMenu 300ms ease-in-out forwards;
   }
   @keyframes transformMenu {
@@ -74,6 +75,7 @@
       margin-top: 32px;
     }
   }
+
   &__nav__close svg {
     stroke: #fcb72b;
     width: 40px;
@@ -108,6 +110,21 @@
   }
 }
 
+#header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 3;
+  background-color: white;
+}
+#header .hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+.header__logo.logo-open {
+  transform: translateX(72px);
+}
 .overlay-menu-mobile {
   position: fixed;
   top: 0;
@@ -125,7 +142,11 @@
 .hide {
   display: none;
 }
+
 @media (min-width: 768px) {
+  #header {
+    position: relative;
+  }
   .header {
     &__container {
       height: 96px;
