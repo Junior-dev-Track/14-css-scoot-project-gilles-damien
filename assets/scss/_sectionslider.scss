@@ -103,19 +103,28 @@
     }
 
     &__slider p::before {
-      content: url("assets/img/section_fleche2_desktop.svg");
-      position: absolute;
-      transform: translate(-50%, -50%);
-      bottom: 85px;
-      right: -90px;
-      width: 38%;
+      display: none;
     }
     &__slider p::after {
       content: url("assets/img/section_round.svg");
       position: absolute;
       transform: translate(-50%, -50%);
       bottom: 145px;
-      right: -92px;
+      right: -101px;
+    }
+  }
+}
+
+@media (min-width: 1350px) {
+  .section {
+    &__slider p::before {
+      display: block;
+      content: url("assets/img/section_fleche2_desktop.svg");
+      position: absolute;
+      transform: translate(-50%, -50%);
+      bottom: 85px;
+      right: -90px;
+      width: 38%;
     }
   }
 }
