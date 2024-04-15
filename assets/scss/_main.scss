@@ -67,6 +67,12 @@
         transform: scaleX(-1);
 
     }
+    & #svg_redguy{
+        position: absolute;
+        top: 77%; // Ajustez ces valeurs comme nécessaire
+        left: 55%;
+        transform: translate(-50%, -50%); // Centrer l'image
+    }
 
 }
 

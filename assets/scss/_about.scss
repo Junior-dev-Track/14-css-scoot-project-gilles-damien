@@ -8,6 +8,7 @@
    background-size: cover;
    background-repeat: no-repeat;
    margin: 0 -10%;
+   padding-top: 64px;
    &:after {
       content: "";
       position: absolute;
@@ -61,8 +62,7 @@
       align-items: center;
       margin: auto;
       & h2{
-         margin-top: 120px;
-         margin-bottom: 105px;
+         margin-top: 50px;
       }
    }
 }
@@ -125,8 +125,7 @@
       display: flex;
       padding: 32px;
       align-items: center;
-      min-height: 112px;
-      width: 90%;
+      justify-content: center;
       background-color: $color--snow;
       margin: 16px auto;
 
@@ -158,6 +157,10 @@
 
 @media (min-width: 768px) {
    .about{
+      &__title{
+         justify-content: left;
+         padding-left: calc(11%);
+      }
       &_section{
          position: relative;
          .svg_circle{
@@ -165,22 +168,36 @@
             display: block;
             height: 63px;
             right: 0;
-            top: 33%;
+            top: 55%;
             z-index: 1;
          }
 
       }
+      &_FAQ{
+         h2{
+            margin-top: 120px;
+         }
+      }
+
+      &_values{
+         h2 {
+            margin-top: 16px;
+            margin-bottom:50px ;
+         }
+      }
    }
 
+   .how{
+      .question{
+         min-height: 0;
+      }
+   }
 }
+
 
 @media (min-width: 1440px) {
 
    .about {
-      &__title{
-         justify-content: left;
-         padding-left: 10%;
-      }
       &_values {
          &_all {
             display: flex;
@@ -189,6 +206,10 @@
             width: 100%;
             margin: 0 auto;
          }
+      }
+      &_section {
+         padding-top: 96px;
+         height: 200px;
       }
    }
 

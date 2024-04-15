@@ -8,7 +8,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0px 32px;
+    padding: 64px 32px 0 32px;
     margin: 0px -11%; /* full width image - delete margin from the body*/
   }
   &__slider h1 {
@@ -63,8 +63,7 @@
       right: -92px;
     }
     &__slider {
-      padding-left: 97px;
-      padding-right: 98px;
+      padding: 96px 98px 0 97px;
     }
   }
 }

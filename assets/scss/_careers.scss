@@ -29,14 +29,6 @@
   &__carfunction:last-child {
     margin-bottom: 0;
   }
-  .main_round_pics {
-    & #svg_redguy {
-      position: absolute;
-      top: 80%; // Ajustez ces valeurs comme nécessaire
-      left: 55%;
-      transform: translate(-50%, -50%); // Centrer l'image
-    }
-  }
 }
 /* Tablet */
 @media (min-width: 380px) and (max-width: 768px) {

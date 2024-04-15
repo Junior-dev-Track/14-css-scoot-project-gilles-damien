@@ -3,12 +3,12 @@
     position: relative;
     height: 160px;
     background-image: url("../assets/img/locations.svg");
-    background-size: 500px 180px;
+    background-size: 500px 308px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 0px 32px;
+    padding: 64px 32px 0 32px;
     margin: 0px -11%; /* full width image - delete margin from the body*/
     z-index: 0;
   }
@@ -23,13 +23,6 @@
   }
 
   &__sliderloc h1 {
-    font-family: Space Mono;
-    font-size: 40px;
-    font-weight: 700;
-    line-height: 40px;
-    letter-spacing: -1.7857142686843872px;
-    text-align: center;
-    color: white;
     text-transform: capitalize;
     z-index: 1;
   }
@@ -121,6 +114,7 @@
       align-items: flex-start;
       background-size: cover;
       background-position: 38% center;
+      padding: 96px 98px 0 97px;
     }
 
     &__sliderloc h2 {
@@ -158,7 +152,7 @@
       justify-content: center;
       align-items: flex-start;
       background-size: cover;
-      padding-left: calc(11%);
+      padding: 96px 98px 0 calc(15%);
     }
     &__sliderloc::after {
       content: url("assets/img/section_round.svg");
